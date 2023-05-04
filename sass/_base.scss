@@ -1,0 +1,55 @@
+// COLOR VARIABLES
+$color-primary: #1c202a;
+// $color-primary-dark: ;
+
+$color-secondary: #d30714;
+
+$color-white: #f6f6f6;
+
+// $color-grey-light-1: #f9f7f6;
+// $color-grey-light-2: #aaa;
+
+// $color-grey-dark-1: #54483A;
+// $color-grey-dark-2: #6D5D4B;
+
+// FONT VARIABLES
+$font-primary: 'Montserrat', sans-serif;
+
+///GLOBAL PADDING
+$padding: 2rem;
+
+// RESPONSIVE BREAKPOINTS
+$bp-largest: 75em;   // 1200px
+$bp-large: 62.5em;   // 1000px
+$bp-medium: 50em;    // 800px;
+$bp-small: 37.5em;    // 600px;
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 37.5%;
+    // font-size: 62.5%; // 10px / 16px = 62.5% -> 1rem = 10px
+}
+
+body{
+    font-family: $font-primary;
+    font-weight: 300;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 4rem 2rem;
+        
+    // display: grid;
+    // grid-template-columns: [full-start] minmax(2rem, 1fr) [center-start] minmax(min-content, 55rem) [center-middle] minmax(min-content, 55rem)  [center-end] minmax(2rem, 1fr) [full-end]; 
+    // grid-template-rows: 4rem min-content;
+}

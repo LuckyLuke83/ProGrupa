@@ -1,0 +1,33 @@
+.nav {
+    grid-column: full-start / full-end ;
+    background-color: $color-primary;
+    color: $color-white;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    
+
+
+    &-img {
+        height: 2rem;
+        margin-right: 1rem;    
+    }
+
+    &-text {
+        font-size: 1.8rem;
+        border-left: solid $color-white 1px;
+        padding-left: 1rem;
+    }
+}
+
+.flex-nav {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem 2rem;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
