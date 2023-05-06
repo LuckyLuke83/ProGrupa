@@ -5,20 +5,15 @@ h1 {
 }
 
 h2 {
-
-}
-
-h2 {
-    font-size: 1.8rem;
-    line-height: 2rem;
+    font-size: 2.8rem;
     font-weight: 300;
-    letter-spacing: 3px;
+    line-height: 3.5rem;
     text-transform: uppercase;
 }
 
 p {
     font-size: 1.6rem;
-    margin-top: 2rem;
+    
 }
 
 .bold {
@@ -29,14 +24,22 @@ p {
     text-transform: uppercase;
 }
 
-.text-large {
-    font-size: 2.8rem;
-    line-height: 3.5rem;
+.text-loose {
+    letter-spacing: 3px;
 }
+
+.text-large {
+    font-size: 1.8rem;
+    line-height: 2rem;
+}    
 
 .text-medium {
     font-size: 2rem;
     line-height: 2.2rem;
+}
+
+.margin-top {
+    margin-top: 2rem;
 }
 
 .primary-color {
@@ -58,6 +61,15 @@ p {
     border: none; 
 }
 
+
+//Font Awsome modyfication
+
+.fa-xl {
+    font-size: 2rem !important;
+    line-height: 2rem !important;
+}
+
 .fa-2xl {
-    line-height: 1rem;
+    font-size: 3rem !important;
+    line-height: 3rem !important;
 }

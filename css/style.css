@@ -7,7 +7,7 @@
 
 html {
   box-sizing: border-box;
-  font-size: 37.5%; }
+  font-size: 50%; }
 
 body {
   font-family: "Montserrat", sans-serif;
@@ -16,7 +16,7 @@ body {
 .container {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 4rem 2rem; }
+  padding: 4rem; }
 
 h1 {
   font-size: 6.5rem;
@@ -24,15 +24,13 @@ h1 {
   font-weight: 300; }
 
 h2 {
-  font-size: 1.8rem;
-  line-height: 2rem;
+  font-size: 2.8rem;
   font-weight: 300;
-  letter-spacing: 3px;
+  line-height: 3.5rem;
   text-transform: uppercase; }
 
 p {
-  font-size: 1.6rem;
-  margin-top: 2rem; }
+  font-size: 1.6rem; }
 
 .bold {
   font-weight: 800; }
@@ -40,13 +38,19 @@ p {
 .uppercase {
   text-transform: uppercase; }
 
+.text-loose {
+  letter-spacing: 3px; }
+
 .text-large {
-  font-size: 2.8rem;
-  line-height: 3.5rem; }
+  font-size: 1.8rem;
+  line-height: 2rem; }
 
 .text-medium {
   font-size: 2rem;
   line-height: 2.2rem; }
+
+.margin-top {
+  margin-top: 2rem; }
 
 .primary-color {
   color: #1c202a; }
@@ -64,8 +68,13 @@ p {
   color: #f6f6f6;
   border: none; }
 
+.fa-xl {
+  font-size: 2rem !important;
+  line-height: 2rem !important; }
+
 .fa-2xl {
-  line-height: 1rem; }
+  font-size: 3rem !important;
+  line-height: 3rem !important; }
 
 .bigtext {
   background-color: #1c202a;
@@ -91,8 +100,7 @@ p {
 
 .info {
   background-color: #1c202a;
-  color: #f6f6f6;
-  padding: 2rem; }
+  color: #f6f6f6; }
   .info__container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(45rem, 1fr));
@@ -125,6 +133,29 @@ p {
   background-color: #f6f6f6;
   color: #1c202a;
   padding: 1rem; }
+  .features__grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(35rem, 1fr));
+    column-gap: 4rem;
+    row-gap: 4rem;
+    margin-top: 4rem; }
+    .features__grid-section {
+      display: grid;
+      grid-template-columns: min-content 1fr;
+      grid-template-rows: min-content min-content;
+      column-gap: 3rem;
+      row-gap: 2rem;
+      align-items: center; }
+  .features-icon {
+    grid-column: 1 / 2;
+    background-color: #1c202a;
+    width: 7rem;
+    height: 7rem;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+  .features-text {
+    grid-column: 1 / -1; }
 
 .nav {
   grid-column: full-start / full-end;

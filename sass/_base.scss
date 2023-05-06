@@ -35,8 +35,8 @@ $bp-small: 37.5em;    // 600px;
 
 html {
     box-sizing: border-box;
-    font-size: 37.5%;
-    // font-size: 62.5%; // 10px / 16px = 62.5% -> 1rem = 10px
+    font-size: 50%;
+    //37.5%; font-size: 62.5%; // 10px / 16px = 62.5% -> 1rem = 10px
 }
 
 body{
@@ -47,7 +47,7 @@ body{
 .container {
     max-width: 1200px;
     margin: 0 auto;
-    padding: 4rem 2rem;
+    padding: 4rem;
         
     // display: grid;
     // grid-template-columns: [full-start] minmax(2rem, 1fr) [center-start] minmax(min-content, 55rem) [center-middle] minmax(min-content, 55rem)  [center-end] minmax(2rem, 1fr) [full-end]; 

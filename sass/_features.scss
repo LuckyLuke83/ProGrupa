@@ -2,4 +2,37 @@
     background-color: $color-white;
     color: $color-primary;
     padding: 1rem;
+
+    &__grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(35rem, 1fr));
+        column-gap: 4rem;
+        row-gap: 4rem;
+        margin-top: 4rem;
+    
+        &-section {
+            display: grid;
+            grid-template-columns: min-content 1fr;
+            grid-template-rows: min-content min-content;
+            column-gap: 3rem;
+            row-gap: 2rem;
+            align-items: center;
+        }
+
+    }
+
+    &-icon {
+        grid-column: 1 / 2;
+        background-color: $color-primary;
+        width: 7rem;
+        height: 7rem;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &-text {
+        grid-column: 1 / -1;
+    }
 }
