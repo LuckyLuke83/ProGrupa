@@ -18,6 +18,12 @@ body {
   margin: 0 auto;
   padding: 4rem; }
 
+.flex {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+
 h1 {
   font-size: 6.5rem;
   line-height: 6.5rem;
@@ -118,10 +124,12 @@ p {
     display: grid;
     grid-template-columns: 1fr 1fr; }
     .info__table-cell {
+      text-align: center;
       display: flex;
       flex-direction: column;
       align-items: center;
       justify-content: center;
+      gap: 1rem;
       padding: 4rem 0; }
     .info__table-icon {
       display: flex;
@@ -197,30 +205,43 @@ p {
   .techspec__title {
     font-size: 2.4rem;
     text-transform: uppercase;
-    text-align: center;
     margin-bottom: 3rem; }
   .techspec__table {
+    max-width: 1000px;
     display: grid;
     grid-template-columns: repeat(4, 25%);
     grid-template-rows: min-content;
+    justify-content: center;
     align-items: center;
     font-size: 1.4rem; }
     .techspec__table-th {
       display: flex;
       flex-direction: column;
       align-items: center;
-      gap: 1rem;
+      gap: 2rem;
       margin-bottom: 1rem; }
     .techspec__table-img {
       height: 15rem; }
+    .techspec__table-tl {
+      height: 7rem;
+      padding: 1rem 0;
+      font-weight: 800;
+      border-bottom: 1px solid #1c202a;
+      display: flex;
+      align-items: center; }
     .techspec__table-tr {
       padding: 1rem 0;
       border-bottom: 1px solid #1c202a;
-      height: 100%; }
+      height: 7rem;
+      text-align: center;
+      display: flex;
+      justify-content: center;
+      align-items: center; }
       .techspec__table-tr-3 {
         grid-column: 2 / -1;
         height: 100%;
         border-bottom: 1px solid #1c202a;
         text-align: center;
         display: flex;
+        justify-content: center;
         align-items: center; }

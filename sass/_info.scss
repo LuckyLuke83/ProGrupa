@@ -14,10 +14,13 @@
         grid-template-columns: 1fr 1fr;
 
         &-cell {
+            text-align: center;
+
             display: flex;
             flex-direction: column;
             align-items: center;
             justify-content: center;
+            gap: 1rem;
             padding: 4rem 0;
         }
 
