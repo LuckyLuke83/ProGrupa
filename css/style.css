@@ -178,25 +178,26 @@ p {
   grid-column: full-start / full-end;
   background-color: #1c202a;
   color: #f6f6f6; }
-
-.logo {
-  display: flex;
-  align-items: center; }
-  .logo-img {
-    height: 2rem;
-    margin-right: 1rem; }
-  .logo-text {
-    font-size: 1.8rem;
-    border-left: solid #f6f6f6 1px;
-    padding-left: 1rem; }
-
-.flex-nav {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 1rem 2rem;
-  display: flex;
-  justify-content: space-between;
-  align-items: center; }
+  .nav-flex {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+  .nav-logo {
+    display: flex;
+    align-items: center; }
+    .nav-logo img {
+      height: 2rem;
+      margin-right: 1rem; }
+    .nav-logo p {
+      font-size: 1.8rem;
+      border-left: solid #f6f6f6 1px;
+      padding-left: 1rem; }
+  @media only screen and (min-width: 50em) {
+    .nav-mobile-btn {
+      display: none; } }
 
 .techspec {
   background-color: #f6f6f6;
