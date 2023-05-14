@@ -175,7 +175,6 @@ p {
     grid-column: 1 / -1; }
 
 .nav {
-  grid-column: full-start / full-end;
   background-color: #1c202a;
   color: #f6f6f6; }
   .nav-flex {
@@ -195,9 +194,40 @@ p {
       font-size: 1.8rem;
       border-left: solid #f6f6f6 1px;
       padding-left: 1rem; }
+  .nav-ul {
+    display: none;
+    text-decoration: none;
+    font-size: 1.6rem;
+    list-style-type: none; }
+    @media only screen and (min-width: 50em) {
+      .nav-ul {
+        display: flex;
+        align-items: center;
+        gap: 2.5rem; } }
+  .nav-li {
+    cursor: pointer; }
+  .nav-li:last-child {
+    cursor: pointer;
+    padding: 0.75rem 1.5rem;
+    border: 1px solid #f6f6f6;
+    transition: all .3s; }
+    .nav-li:last-child:hover {
+      color: #1c202a;
+      background-color: #f6f6f6; }
   @media only screen and (min-width: 50em) {
     .nav-mobile-btn {
       display: none; } }
+  .nav-open .nav-ul {
+    opacity: 1;
+    pointer-events: auto;
+    visibility: visible;
+    transform: translateX(0); }
+
+.nav-open .nav-ul {
+  opacity: 1;
+  pointer-events: auto;
+  visibility: visible;
+  transform: translateX(0); }
 
 .techspec {
   background-color: #f6f6f6;
