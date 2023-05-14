@@ -112,7 +112,7 @@
         opacity: 1;
         pointer-events: auto;
         visibility: visible;
-        transform: translateX(0); 
+        transform: translateX(0);
     }
 }
 
@@ -120,13 +120,24 @@
     opacity: 1;
     pointer-events: auto;
     visibility: visible;
-    transform: translateX(0); 
+    transform: translateX(0);
 }
 
 .nav-open .nav-mobile-close {
     display: block;
-  }
+}
   
-  .nav-open .nav-mobile-open {
+.nav-open .nav-mobile-open {
     display: none;
+}
+
+.sticky .nav{
+    position: fixed;
+    width: 100%;
+    z-index: 5;
+    box-shadow: 0 1.2rem 3.2rem rgba(0, 0, 0, 0.03);
+}
+
+.sticky .section-onas {
+    margin-top: 8rem;
   }

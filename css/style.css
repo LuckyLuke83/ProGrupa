@@ -265,6 +265,15 @@ p {
 .nav-open .nav-mobile-open {
   display: none; }
 
+.sticky .nav {
+  position: fixed;
+  width: 100%;
+  z-index: 5;
+  box-shadow: 0 1.2rem 3.2rem rgba(0, 0, 0, 0.03); }
+
+.sticky .section-onas {
+  margin-top: 8rem; }
+
 .techspec {
   background-color: #f6f6f6;
   color: #1c202a;
