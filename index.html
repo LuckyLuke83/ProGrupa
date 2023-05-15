@@ -9,7 +9,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,500;0,600;0,800;1,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
     <!-- <link rel="shortcut icon" type="image/png" href="img/favicon.png"> -->
-    <script src="https://kit.fontawesome.com/549e2d9780.js" crossorigin="anonymous"></script>
+    
     <title>ProGrupa - Rejestratory</title>
 </head>
 <body>
@@ -25,8 +25,12 @@
                 <li class="nav-li">Kontakt</li>
             </ul>
             <div class="nav-mobile-btn">
-                <i class="nav-mobile-open fa-solid fa-bars fa-2xl" style="color: #ffffff;"></i>
-                <i class="nav-mobile-close hidden fa-solid fa-xmark fa-2xl" style="color: #ffffff;"></i>
+                <div class="nav-mobile-open">
+                    <i class="nav-mobile-open fa-solid fa-bars fa-2xl" style="color: #ffffff;"></i>
+                </div>
+                <div class="nav-mobile-close hidden">
+                    <i class="fa-solid fa-xmark fa-2xl" style="color: #ffffff;"></i>
+                </div>   
             </div>   
             
         </div>  
@@ -103,48 +107,66 @@
             </h2>
             <div class="features__grid">
                 <div class="features__grid-section">
-                    <i class="fa-solid fa-stethoscope fa-2xl features-icon" style="color: #ffffff;"></i>
+                    <div class="features-icon">
+                        <i class="fa-solid fa-stethoscope fa-2xl" style="color: #ffffff;"></i>
+                    </div>
                     <p class="text-large text-loose uppercase text-bold">Szpitale</p>
                     <p class="features-text">Monitorowanie temperatury w szpitalnych pomieszczeniach o podwyższonej czystości i urządzeniach medycznych.</p>
                 </div>
                 <div class="features__grid-section">
-                    <i class="fa-solid fa-flask-vial fa-2xl features-icon" style="color: #ffffff;"></i>
+                    <div class="features-icon">
+                        <i class="fa-solid fa-flask-vial fa-2xl" style="color: #ffffff;"></i>
+                    </div>
                     <p class="text-large text-loose uppercase text-bold">Laboratoria</p>
                     <p class="features-text">Stały pomiar temperatury w laboratoriach. Utrzymanie kontroli nad warunkami przeprowadzania badań laboratoryjnych.</p>
                 </div>
                 <div class="features__grid-section">
-                    <i class="fa-solid fa-staff-snake fa-2xl features-icon" style="color: #ffffff;"></i>
+                    <div class="features-icon">
+                        <i class="fa-solid fa-staff-snake fa-2xl" style="color: #ffffff;"></i>
+                    </div>
                     <p class="text-large text-loose uppercase text-bold">Apteki</p>
                     <p class="features-text">Kontrola temperatury w pomieszczeniach aptecznych. Przekłada się na utrzymywanie wymaganego poziomu temperatury.</p>
                 </div>
                 <div class="features__grid-section">
-                    <i class="fa-solid fa-truck-medical fa-2xl features-icon" style="color: #ffffff;"></i>
+                    <div class="features-icon">
+                        <i class="fa-solid fa-truck-medical fa-2xl" style="color: #ffffff;"></i>
+                    </div>
                     <p class="text-large text-loose uppercase text-bold">TRANSPORT
                         LEKÓW</p>
                     <p class="features-text">Rejestrowanie temperatury podczas transportu leków w celu zachowania właściwości i skuteczności produktów.</p>
                 </div>
                 <div class="features__grid-section">
-                    <i class="fa-solid fa-warehouse  fa-2xl features-icon" style="color: #ffffff;"></i>
+                    <div class="features-icon">
+                        <i class="fa-solid fa-warehouse fa-2xl" style="color: #ffffff;"></i>
+                    </div>
                     <p class="text-large text-loose uppercase text-bold">Magazyn</p>
                     <p class="features-text">System monitorowania w magazynach, zapobieganie stratom i utrzymywanie właściwego poziomu temperatury.</p>
                 </div>
                 <div class="features__grid-section">
-                    <i class="fa-solid fa-pills fa-2xl features-icon" style="color: #ffffff;"></i>
+                    <div class="features-icon">
+                        <i class="fa-solid fa-pills fa-2xl" style="color: #ffffff;"></i>
+                    </div>
                     <p class="text-large text-loose uppercase text-bold">Przechowywanie leków</p>
                     <p class="features-text">Nieprzerwany monitoring warunków przechowywania leków w celu zachowania ich właściwości leczniczych.</p>
                 </div>
                 <div class="features__grid-section">
-                    <i class="fa-solid fa-truck-arrow-right fa-2xl features-icon" style="color: #ffffff;"></i>
+                    <div class="features-icon">
+                        <i class="fa-solid fa-truck-arrow-right fa-2xl" style="color: #ffffff;"></i>
+                    </div>
                     <p class="text-large text-loose uppercase text-bold">Transport żywności</p>
                     <p class="features-text">Monitorowanie temperatury w transporcie żywności dla zachowania jej świeżości i przydatności do spożycia.</p>
                 </div>
                 <div class="features__grid-section">
-                    <i class="fa-solid fa-building-columns fa-2xl features-icon" style="color: #ffffff;"></i>
+                    <div class="features-icon">
+                        <i class="fa-solid fa-building-columns fa-2xl" style="color: #ffffff;"></i>
+                    </div>
                     <p class="text-large text-loose uppercase text-bold">Muzea</p>
                     <p class="features-text">Stały rejestr poziomu temperatury w celu zachowania trwałości cennych dzieł sztuki przechowywanych w muzeach.</p>
                 </div>
                 <div class="features__grid-section">
-                    <i class="fa-solid fa-bowl-rice fa-2xl features-icon" style="color: #ffffff;"></i>
+                    <div class="features-icon">
+                        <i class="fa-solid fa-bowl-rice fa-2xl" style="color: #ffffff;"></i>
+                    </div>
                     <p class="text-large text-loose uppercase text-bold">Przechowywanie żywności</p>
                     <p class="features-text">Kontrola warunków przechowywania żywności w branży spożywczej, sprawdzony sposób na uniknięcie zepsucia produktów.</p>
                 </div>
@@ -269,6 +291,7 @@
         </div>
     </div>
     
+    <script src="https://kit.fontawesome.com/549e2d9780.js" crossorigin="anonymous"></script>
     <script src="js/script.js"></script>
 </body>
 </html>
