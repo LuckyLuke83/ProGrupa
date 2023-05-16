@@ -1,5 +1,6 @@
 'use strict'
 
+console.log('Hello Kuba')
 /////////////////////////////
 //Mobile navigation
 
