@@ -7,7 +7,13 @@
 
 html {
   box-sizing: border-box;
-  font-size: 50%; }
+  font-size: 37.5%; }
+  @media only screen and (min-width: 50em) {
+    html {
+      font-size: 50%; } }
+  @media only screen and (min-width: 62.5em) {
+    html {
+      font-size: 62.5%; } }
 
 body {
   font-family: "Montserrat", sans-serif;
@@ -100,6 +106,7 @@ p {
     align-self: flex-end; }
 
 .header {
+  margin-top: 5rem;
   background-color: #f6f6f6;
   color: #1c202a; }
   .header__container {
@@ -155,7 +162,7 @@ p {
   padding: 1rem; }
   .features__grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(35rem, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
     column-gap: 4rem;
     row-gap: 4rem;
     margin-top: 4rem; }
@@ -178,8 +185,14 @@ p {
     grid-column: 1 / -1; }
 
 .nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 5rem;
   background-color: #1c202a;
-  color: #f6f6f6; }
+  color: #f6f6f6;
+  box-shadow: 0 1.2rem 3.2rem rgba(0, 0, 0, 0.03);
+  z-index: 20; }
   .nav-flex {
     max-width: 1200px;
     margin: 0 auto;
@@ -200,7 +213,7 @@ p {
   .nav-ul {
     display: none;
     text-decoration: none;
-    font-size: 2rem;
+    font-size: 4rem;
     list-style-type: none;
     background-color: rgba(28, 32, 42, 0.6);
     -webkit-backdrop-filter: blur(5px);
@@ -264,15 +277,6 @@ p {
 
 .nav-open .nav-mobile-open {
   display: none; }
-
-.sticky .nav {
-  position: fixed;
-  width: 100%;
-  z-index: 5;
-  box-shadow: 0 1.2rem 3.2rem rgba(0, 0, 0, 0.03); }
-
-.sticky .section-onas {
-  margin-top: 8rem; }
 
 .techspec {
   background-color: #f6f6f6;
